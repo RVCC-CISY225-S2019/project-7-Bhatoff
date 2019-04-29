@@ -1,0 +1,297 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+
+}
+
+.content {
+  max-width: 30rem;
+  margin-left: auto;
+  margin-right: auto;
+  /*height: 100%;*/
+}
+
+.header {
+  /*height: 25vw;*/
+  /*max-height: 150px;*/
+  /*width: 100%;*/
+  background-color: #0F1630;
+  height: 3.5em;
+  padding: 1em;
+}
+
+img.logo {
+  max-height: 100%;
+  width: 3rem;
+  float: left;
+}
+
+.page-title {
+  color: #ffffff;
+  float: left;
+  font-size: 1.1rem;
+  line-height: 3rem;
+}
+
+@media screen and (max-width: 24rem) {
+  .big-title {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 40rem) {
+  .big-title {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (min-width: 34rem) {
+  .header-content {
+    padding-top: 1rem;
+  }
+}
+
+@media screen and (max-width: 33rem) {
+  .header-content {
+    padding-top: .5rem;
+  }
+}
+
+.hero {
+  padding: 4em;
+  max-width: 100%;
+  background-color: #012249;
+  color: white;
+}
+
+img.my-picture {
+  display: block;
+  margin: 0 auto 2em;
+  max-width: 100%;
+  width: 8rem;
+  height: 8rem;
+  border: 2px solid white;
+  border-radius: 50%;
+}
+
+.iama {
+  max-width: 100%;
+  color: #000000;
+  font-size: 1.1em;
+  font-style: italic;
+}
+
+.my-info {
+  max-width: 100%;
+  color: #000000;
+  font-size: 1.6rem;
+  line-height: 1.5;
+  margin: 0px auto 3em;
+}
+
+.my-info:last-of-type {
+  margin: 0px;
+}
+
+.my-name {
+  color: white;
+  font-size: 1.6rem;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.my-location {
+    color: rgb(255,255,255);
+    font-size: 1rem;
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.about-me {
+  padding: 2.5em;
+}
+
+.about-content {
+    border-left: 1px solid #DFEAF1;
+    padding-left: 3rem;
+}
+.footer {
+  color:#000000;
+  font-style: italic;
+}
+fieldset{
+ border: 2px groove;
+ display: block;
+ margin-left: auto;    
+}
+legend{
+ width: auto;   
+ height: auto;   
+}
+container{
+ display: block;
+ position: relative;
+ cursor: pointer;
+}
+input[type="radio"]{
+ z-index: 9999;
+}
+.overlay{
+    display: inline-block;
+}
+input[type="radio"]:checked + .overlay {
+    background-color: black;
+}
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'PT Serif', serif;
+    margin: 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+main,
+form,
+footer {
+    margin: 0 .5rem;
+}
+
+/* skip link */
+.skip {
+    position: absolute;
+    top: -1000px;
+    left: -1000px;
+    height: 1px;
+    width: 1px;
+    text-align: left;
+    overflow: hidden;
+    background-color: #333;
+    padding: .5rem;
+    color: white;
+    font-size: 1.5rem;
+}
+
+a.skip:active,
+a.skip:focus,
+a.skip:hover {
+    left: 0;
+    top: 0;
+    width: auto;
+    height: auto;
+    overflow: visible;
+}
+
+/*   mobile-first header with hamburger*/
+.logo-container {
+    display: flex;
+}
+
+.page-title {
+    color: white;
+    font-size: 1.5rem;
+}
+
+.navbar {
+    background-color: #333;
+    padding-bottom: 1rem;
+}
+
+.main-nav {
+    list-style-type: none;
+    display: none;
+}
+
+.nav-links,
+.logo {
+    text-decoration: none;
+    color: white;
+}
+
+.main-nav li {
+    text-align: center;
+    margin: 1rem auto;
+}
+
+.logo {
+    display: inline-block;
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    margin-left: .5rem;
+}
+
+.navbar-toggle {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    cursor: pointer;
+    color: white;
+    font-size: 1.5rem;
+}
+
+.active {
+    display: block;
+}
+
+/*   media query for navbar */
+
+@media screen and (min-width: 40rem) {
+
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 0;
+        height: 4.5rem;
+        align-items: center;
+    }
+
+    .main-nav {
+        display: flex;
+        margin-right: 2rem;
+        flex-direction: row;
+        justify-content: flex-end;
+        padding: 0 0.5rem;
+    }
+
+    .main-nav li {
+        margin: 0;
+    }
+
+    .nav-links {
+        margin-left: 1rem;
+    }
+
+    .logo {
+        margin-top: 0;
+    }
+
+    .navbar-toggle {
+        display: none;
+    }
+
+    .logo:hover,
+    .nav-links:hover {
+        color: white;
+    }
+}

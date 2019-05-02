@@ -27,7 +27,7 @@ img.logo {
 }
 
 .page-title {
-  color: #ffffff;
+  color: black;
   float: left;
   font-size: 1.1rem;
   line-height: 3rem;
@@ -170,6 +170,17 @@ body {
 
 img {
     max-width: 100%;
+    
+}
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
 }
 
 main,
@@ -209,13 +220,14 @@ a.skip:hover {
 }
 
 .page-title {
-    color: white;
+    color: black;
     font-size: 1.5rem;
 }
 
 .navbar {
     background-color: #333;
     padding-bottom: 1rem;
+    
 }
 
 .main-nav {
@@ -226,7 +238,7 @@ a.skip:hover {
 .nav-links,
 .logo {
     text-decoration: none;
-    color: white;
+    color: black;
 }
 
 .main-nav li {
@@ -280,6 +292,7 @@ a.skip:hover {
 
     .nav-links {
         margin-left: 1rem;
+        
     }
 
     .logo {

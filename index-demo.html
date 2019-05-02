@@ -4,7 +4,7 @@
     <title>About Me</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="images/BHlogo.png">
     <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -20,7 +20,7 @@
             </span>
             <a href="#header" class="logo">
                 <div class="logo-container">
-                <img class="logo main-col" src="images/logo-1913689.svg" alt="Company Logo">
+                <img class="logo main-col" src="images/BHlogo.svg" alt="My Logo">
                 <h1 class="page-title">Programming</h1>
             </div>
             </a>
@@ -35,7 +35,7 @@
                     <a href="#pictures" class="nav-links">My Photos</a>
                 </li>
                 <li>
-                    <a href="#story" class="nav-links">A Story</a>
+                    <a href="#story" class="nav-links">Pride and Prejudice</a>
                 </li>
                 <li>
                     <a href="#contact" class="nav-links">Contact Me</a>
@@ -43,6 +43,7 @@
             </ul>
         </nav>
         </header>
+         <br><br>
           <a href="#main" class="skip">Skip to main</a>
           <main id="main" tabindex="-1" class="main">
            <section class="hero">
@@ -64,33 +65,49 @@
                 </div>
             </div>
         </section>
+        
+        <hr>
+        
          <div class="back-to-top">
             <a href="#">Back to Top</a>
         </div>
-        <section id="pictures" class="gallery">
-            <p>GALLERY - PUT CODE HERE</p>
         
+        <hr>
+        
+        <section id="pictures" class="gallery">
+           <h2> <p>GALLERY</p></h2>
+       
+       <div class="row">
+     <div class="column">
          <figure>
           <img src="images/Fisker-small.jpg"
         alt="Expensive Car"
         style="max-width: 100%">
         </figure>
+        </div>
+  
         
-        <hr>
-        
+     <div class="column"> 
+         
         <figure>
           <img src="images/Knicks-small.jpg"
         alt="Knicks Game"
         style="max-width: 100%">       
         </figure> 
-        
-        <hr>
+           </div>
+           
+        <div class="column">
         
         <figure>
           <img src="images/Zlatan-small.jpeg"
         alt="Legend Soccer Player"
         style="max-width: 100%">      
-        </figure>  
+        </figure> 
+          
+           </div> 
+           
+            </div>
+            
        </section>
       
         <hr>
@@ -187,29 +204,31 @@
       
       <form>
        <fieldset>
-        <legend>Please Feel Free to Contact Me</legend> 
-        Email: <input type="text" ><br> 
-        <br class="mobile-first"><br class="mobile-first">
-        Message: <input type="text" ><br> 
-        <br class="mobile-first"><br class="mobile-first">
-       <fieldset>
-        <legend>I would like a reply</legend>
-        <div>
-         <input type="radio" id="Yes" name="Yes" value="Yes"
-                checked>
-            <label for="Yes">Yes</label>
-        </div>
-           
-        <div>
-         <input type="radio" id="No" name="No" value="No"
-                checked>
-            <label for="No">No</label>
-        </div> 
-        <br class="mobile-first"><br class="mobile-first"> 
-       </fieldset> 
-          
-       </fieldset>
-      </form>
+                <legend> Please Feel Free to Contact Me </legend>
+                <label for="email">Email</label>
+                <br>
+                <input id="email" type="email">
+                <br><br><br>
+                <label for="message">Message</label>
+                <br>
+                <textarea id="message" name="Message"></textarea>
+
+                <br><br><br>
+                <fieldset>
+                    <legend>
+                        <label id="Yes_No_radio">I would like a reply</label>
+                    </legend>
+                    <input type="radio" name="Yes_No" checked>Yes
+                    <br><br>
+                    <input type="radio" name="Yes_No" checked>No
+                </fieldset>
+                <br><br>
+                <button type="submit">
+                    <div style="cursor:pointer">Send Message</div>
+                </button>
+            </fieldset>
+        </form>
+
     </section>
        
         <footer>
@@ -228,13 +247,15 @@
             alt="Valid CSS!" />
     </a>
         </p> 
-         <script>
+        <br>
+    <!-- end of footer -->
+    <br class="mobile-first"><br class="mobile-first">
+    <!-- start of javascript for nav toggle -->
+    <script>
         let mainNav = document.getElementById('js-menu');
         let navBarToggle = document.getElementById('js-navbar-toggle');
         let symbolToggle = document.getElementById('symbol-toggle');
-
-
-        navBarToggle.addEventListener('click', function () {
+        navBarToggle.addEventListener('click', function() {
             mainNav.classList.toggle('active');
             if (symbolToggle.classList.contains('fa-bars')) {
                 symbolToggle.classList.remove('fa-bars');
@@ -245,6 +266,8 @@
             }
         });
     </script>
-    
-      </html>
+    <!-- end of javascript for nav toggle -->
+</body>
+
+</html>
    
